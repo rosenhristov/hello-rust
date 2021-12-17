@@ -162,19 +162,21 @@ fn main() {
     println!("Response ext: {}", response_text);
 
     //the long way:
-    // match reqwest::get("https://www.youtube.com/watch?v=xYoESR1aEQk&list=PLVvjrrRCBy2JSHf9tGxGKJ-bYAN_uDCUL&index=38") {
-    //     Ok(mut response) => {
-    //         if response.status() == reqwest::StatusCode::Ok {
-    //             match response.text() {
-    //                 Ok(text) => println!("Response text: {}", text),
-    //                 Err(_) => println!("Could not read the response text")
-    //             }
-    //         } else {
-    //             println!("The response was not 200. It was {}", &response.status());
-    //         }
-    //     },
-    //     Err(_) => println!("Could not make the request")
-    // }
+    /*
+    match reqwest::get("https://www.youtube.com/watch?v=xYoESR1aEQk&list=PLVvjrrRCBy2JSHf9tGxGKJ-bYAN_uDCUL&index=38") {
+        Ok(mut response) => {
+            if response.status() == reqwest::StatusCode::Ok {
+                match response.text() {
+                    Ok(text) => println!("Response text: {}", text),
+                    Err(_) => println!("Could not read the response text")
+                }
+            } else {
+                println!("The response was not 200. It was {}", &response.status());
+            }
+        },
+        Err(_) => println!("Could not make the request")
+    }
+  */
 
     println!("\n::: Working with command line input :::");
     let mut user_input:String = String::new();
