@@ -161,7 +161,7 @@ fn main() {
              .expect("Could not read the response text");
     println!("Response ext: {}", response_text);
 
-    //the long way:
+    //HTTP requests: the long way:
     /*
     match reqwest::get("https://www.youtube.com/watch?v=xYoESR1aEQk&list=PLVvjrrRCBy2JSHf9tGxGKJ-bYAN_uDCUL&index=38") {
         Ok(mut response) => {
